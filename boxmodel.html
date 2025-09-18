@@ -14,6 +14,7 @@
             height: 44px;
             background-color: #002ead;
             text-align: center;
+            padding: 10px;
         }
         a{
              color: white;
@@ -21,20 +22,39 @@
         }
         .second{
             text-align: start;
-            background-color: red;
             width: 800px;
             margin-top: 60px;
-            margin-left: 200px;
+            margin-left: 150px;
         }
         .third{
-            /* margin-top: 60px;
-            margin-left: 100px; */
-            padding: 70px;
+            margin-top: 80px;
+            margin-left: 150px;
+            margin-right: 150px;
         }
-        img{
-            /* width: 700px; */
+        .fourth{
+            margin-left: 150px;
+            margin-top: 80px;
         }
-        
+        .fourth p{
+            margin-top: 30px;
+        }
+        .fifth{
+            margin-left: 150px;
+            margin-top: 80px;
+        }
+        .sixth, .seventh, .eighth, .ninth, .tenth, .eleventh, .thirteenth{
+            margin-left: 150px;
+            margin-top: 60px;
+        }
+        .sixth p, .seventh p, .eighth p, .ninth p, .tenth p, .eleventh p, .thirteenth p{
+            margin-top: 30px;
+            font-size: 20px;
+            width: 58%;
+        }
+        .twelveth{
+            margin-left: 150px;
+            margin-top: 80px;
+        }
     </style>
 </head>
 <body>
@@ -46,8 +66,98 @@
         <h1>CSS Unit Guide: CSS em, rem, vh, vw, and more, Explained</h1>
     </div>
     <div class="third">
-        <img src="backgroundimgforfreecode camp.jpg" alt="">
-
+        <img src="backgroundimgforfreecode camp.jpg" alt="" width="960px">
+    </div>
+    <div class="fourth">
+        <p style="font-size: 35px; font-weight: 500; width: 68%;">Many CSS properties like width, margin, padding, and font-size take a length, and CSS has many different ways to express length.</p>
+        <p style="font-size: 25px; font-weight: 500; width: 68%;">In CSS, length is a number an a unit with no whitespace. For example, 5px, 0.9em, and so on.</p>
+        <p style="font-size: 20px; font-weight: 500; width: 50%;">There are two general kinds of units used for length and size in CSS: absolute and relative.</p>
+    </div>
+    <div class="fifth">
+        <h1>Absolute Length Units</h1>
+        <p style="font-size: 25px; font-weight: 500; width: 64%;">Absolute length units are based on an actual physical unit, and are generally considered to be the same size across devices. However, depending on your screen size and quality, or settings in your browser or OS, there may be some exceptions.</p>
+        <p style="margin-top: 30px; font-size: 25px; font-weight: 500;">Here are some common absolute length units in CSS:</p>
+    </div>
+    <div class="sixth">
+        <div class="inside-sixth" style="width: 30px; height: 30px; text-align: center; background-color: #d0d0d5; padding-top: 5px;" >
+            <p style="margin-top: 0;">px</p>
+        </div>
+        <p style="margin-top: 0;">Pixels, or px, are one of the most common length units in CSS.</p>
+        <p>In CSS, 1 pixel is formally defined as 1/96 of an inch. All other absolute length units are based on this definition of a pixel.</p>
+        <p>But when that standard was originally formulated, most monitors had a resolution of 1024 x 768, and a DPI (dots per inch) of 96.</p>
+        <p>Screens on modern devices have much higher resolutions and DPIs, so a line that's 96 pixels long may not measure exactly 1 inch, depending on the device.</p>
+        <p>Even though sizing in pixels can vary across devices, it's generally considered better to use pixels for screens.</p>
+        <p>If you know that your page will be printed on a high quality printer, then you may consider using another unit like cm or mm.</p>
+        <p>You can read more about the history of the pixel unit and why a CSS inch doesn't always match a physical inch in this article.</p>
+    </div>
+    <div class="seventh">
+        <div class="inside-seventh" style="width: 30px; height: 30px; text-align: center; background-color: #d0d0d5; padding-top: 5px;" >
+            <p style="margin-top: 0;">cm</p>
+        </div>
+        <p style="margin-top: 0;">Centimeters.</p>
+        <p>In CSS, 1cm is roughly 37.8 pixels, or about 25.2/64 of an inch.</p>
+    </div>
+    <div class="eighth">
+        <div class="inside-eighth" style="width: 30px; height: 30px; text-align: center; background-color: #d0d0d5; padding-top: 5px;" >
+            <p style="margin-top: 0;">mm</p>
+        </div>
+        <p style="margin-top: 0;">Millimeters</p>
+        <p>In CSS, 1mm is roughly 3.78 pixels, or 1/10th of a centimeter.</p>
+    </div>
+    <div class="ninth">
+        <div class="inside-ninth" style="width: 30px; height: 30px; text-align: center; background-color: #d0d0d5; padding-top: 5px;" >
+            <p style="margin-top: 0;">in</p>
+        </div>
+        <p style="margin-top: 0;">Inches</p>
+        <p>In CSS, 1in is roughly 96 pixels, or about 2.54cm.</p>
+    </div>
+    <div class="tenth">
+        <div class="inside-tenth" style="width: 30px; height: 30px; text-align: center; background-color: #d0d0d5; padding-top: 5px;" >
+            <p style="margin-top: 0;">pt</p>
+        </div>
+        <p style="margin-top: 0;">Points</p>
+        <p>In CSS, 1pt is roughly 1.3333 pixels, or 1/72th of an inch.</p>
+    </div>
+    <div class="eleventh">
+        <div class="inside-eleventh" style="width: 30px; height: 30px; text-align: center; background-color: #d0d0d5; padding-top: 5px;" >
+            <p style="margin-top: 0;">pc</p>
+        </div>
+        <p style="margin-top: 0;">Picas</p>
+        <p>In CSS, 1pc is roughly 16 pixels, or 1/6 of an inch.</p>
+    </div>
+    <div class="twelveth">
+        <h1>Relative Length Units</h1>
+        <p style="font-size: 25px; font-weight: 500; width: 64%; margin-top: 0;">Relative length units are relative to another element's size or settings. For example, the relative font size of an element may be calculated using the parent element's font size.</p>
+        <p style="margin-top: 30px; font-size: 25px; font-weight: 500;">Here are some common relative length units:</p>
+    </div>
+     <div class="thirteenth">
+        <div class="inside-sixth" style="width: 30px; height: 30px; text-align: center; background-color: #d0d0d5; padding-top: 5px;" >
+            <p style="margin-top: 0;">em</p>
+        </div>
+        <p style="margin-top: 0;">The CSS em unit gets its name from a typographical unit. In typography, the term em "was originally a reference to the width of the capital M in the typeface and size being used".</p>
+        <p>When used with the font-size property, em inherits the font-size from its parent element:</p>
+    </div>
+    <div class="fourteenth" style="background-color: #eeeef0; width: 600px;height: 400px; margin-left: 150px; margin-top: 80px; padding: 20px;">
+        <div class="next" style="margin-top: 10px;">
+            <p style="color: #669900;">.container[</p>
+            <p style="color: #990055;">font-size: 16px;</p>
+            <p style="color: #669900;">]</p>
+        </div>
+        <div class="next" style="margin-top: 40px;">
+            <p style="color: #669900;">.container[</p>
+            <p style="color: #990055;">font-size: 16px;</p>
+            <p style="color: #669900;">]</p>
+        </div>
+        <div class="next" style="margin-top: 40px;">
+            <p style="color: #669900;">.container[</p>
+            <p style="color: #990055;">font-size: 16px;</p>
+            <p style="color: #669900;">]</p>
+        </div>
+        <div class="next" style="margin-top: 40px;">
+            <p style="color: #669900;">.container[</p>
+            <p style="color: #990055;">font-size: 16px;</p>
+            <p style="color: #669900;">]</p>
+        </div>
     </div>
 </body>
 </html>
