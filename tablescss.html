@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .first table, .first th, .first td{
+            border-style: dashed;
+            border-color: aqua;
+            border-width: 2px;
+            border-collapse: separate;
+            border-spacing: 20px;
+        }
+        .second table{
+            border-style: double;
+            width: 100%;
+            text-align: right;
+        }
+        .third table{
+            border-style: groove;
+            width: 50%;
+            text-align: left;
+        }
+        .fourth table{
+            border-style: dotted;
+            border-color: black;
+            height: 400px;
+            border-collapse: collapse;
+            
+
+        }
+        .fourth th{
+            /* border: 1px solid black; */
+            vertical-align: middle;
+            border-top: 1px solid red;
+        }
+        .fifth th{
+            /* height: 200px; */
+            vertical-align: bottom;
+            padding: 30px 50px 30px 50px;
+            background-color: blueviolet;
+        }
+        .fifth table, .fifth th, .fifth td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 300px;
+            text-align: center;
+        }
+        .fifth tr:hover{
+            background-color: blue;
+        }
+        .fifth tr:nth-child(odd){
+            background-color: brown;
+        }
+        .tablecontainer table{
+            width: 100%;
+        }
+        .tablecontainer{
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="first">
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Favorite food</th>
+            </tr>
+            <tr>
+                <td>Hikmat</td>
+                <td>Female</td>
+                <td>Rice</td>
+            </tr>
+            <tr>
+                <td>Caroline</td>
+                <td>Female</td>
+                <td>Rice</td>
+            </tr>
+            <tr>
+                <td>Mr Akinola</td>
+                <td>Male</td>
+                <td>Amale</td>
+            </tr>
+            <tr>
+                <td>Smith</td>
+                <td>Male</td>
+                <td>Bread</td>
+            </tr>
+            <tr>
+                <td>Fisayomi</td>
+                <td>Female</td>
+                <td>Spaghetti</td>
+            </tr>
+            <tr>
+                <td>Abraham</td>
+                <td>Male</td>
+                <td>Fried rice</td>
+            </tr>
+        </table>
+    </div>
+    <div class="second">
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Favorite food</th>
+            </tr>
+            <tr>
+                <td>Hikmat</td>
+                <td>Female</td>
+                <td>Rice</td>
+            </tr>
+            <tr>
+                <td>Caroline</td>
+                <td>Female</td>
+                <td>Rice</td>
+            </tr>
+            <tr>
+                <td>Mr Akinola</td>
+                <td>Male</td>
+                <td>Amale</td>
+            </tr>
+            <tr>
+                <td>Smith</td>
+                <td>Male</td>
+                <td>Bread</td>
+            </tr>
+            <tr>
+                <td>Fisayomi</td>
+                <td>Female</td>
+                <td>Spaghetti</td>
+            </tr>
+            <tr>
+                <td>Abraham</td>
+                <td>Male</td>
+                <td>Fried rice</td>
+            </tr>
+        </table>
+    </div>
+    <div class="third">
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Favorite food</th>
+            </tr>
+            <tr>
+                <td>Hikmat</td>
+                <td>Female</td>
+                <td>Rice</td>
+            </tr>
+            <tr>
+                <td>Caroline</td>
+                <td>Female</td>
+                <td>Rice</td>
+            </tr>
+            <tr>
+                <td>Mr Akinola</td>
+                <td>Male</td>
+                <td>Amale</td>
+            </tr>
+            <tr>
+                <td>Smith</td>
+                <td>Male</td>
+                <td>Bread</td>
+            </tr>
+            <tr>
+                <td>Fisayomi</td>
+                <td>Female</td>
+                <td>Spaghetti</td>
+            </tr>
+            <tr>
+                <td>Abraham</td>
+                <td>Male</td>
+                <td>Fried rice</td>
+            </tr>
+        </table>
+    </div>
+    <div class="fourth">
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Favorite food</th>
+            </tr>
+            <tr>
+                <td>Hikmat</td>
+                <td>Female</td>
+                <td>Rice</td>
+            </tr>
+            <tr>
+                <td>Caroline</td>
+                <td>Female</td>
+                <td>Rice</td>
+            </tr>
+            <tr>
+                <td>Mr Akinola</td>
+                <td>Male</td>
+                <td>Amale</td>
+            </tr>
+            <tr>
+                <td>Smith</td>
+                <td>Male</td>
+                <td>Bread</td>
+            </tr>
+            <tr>
+                <td>Fisayomi</td>
+                <td>Female</td>
+                <td>Spaghetti</td>
+            </tr>
+            <tr>
+                <td>Abraham</td>
+                <td>Male</td>
+                <td>Fried rice</td>
+            </tr>
+        </table>
+    </div>
+    <div class="fifth">
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Favorite food</th>
+            </tr>
+            <tr>
+                <td>Hikmat</td>
+                <td>Female</td>
+                <td>Rice</td>
+            </tr>
+            <tr>
+                <td>Caroline</td>
+                <td>Female</td>
+                <td>Rice</td>
+            </tr>
+            <tr>
+                <td>Mr Akinola</td>
+                <td>Male</td>
+                <td>Amale</td>
+            </tr>
+            <tr>
+                <td>Smith</td>
+                <td>Male</td>
+                <td>Bread</td>
+            </tr>
+            <tr>
+                <td>Fisayomi</td>
+                <td>Female</td>
+                <td>Spaghetti</td>
+            </tr>
+            <tr>
+                <td>Abraham</td>
+                <td>Male</td>
+                <td>Fried rice</td>
+            </tr>
+        </table>
+    </div>
+    <div class="tablecontainer">
+        <table>
+            <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Points</th>
+            <th>Points</th>
+            <th>Points</th>
+            <th>Points</th>
+            <th>Points</th>
+            <th>Points</th>
+            <th>Points</th>
+            <th>Points</th>
+            <th>Points</th>
+            <th>Points</th>
+            <th>Points</th>
+            <th>Points</th>
+            <th>Points</th>
+            <th>Points</th>
+            <th>Points</th>
+            <th>Points</th>
+            <th>Points</th>
+            <th>Points</th>
+            <th>Points</th>
+            <th>Points</th>
+            <th>Points</th>
+            <th>Points</th>
+            <th>Points</th>
+            <th>Points</th>
+            <th>Points</th>
+            <th>Points</th>
+            <th>Points</th>
+            </tr>
+            <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+            <td>50</td>
+            <td>50</td>
+            <td>50</td>
+            <td>50</td>
+            <td>50</td>
+            <td>50</td>
+            <td>50</td>
+            <td>50</td>
+            <td>50</td>
+            <td>50</td>
+            <td>50</td>
+            <td>50</td>
+            <td>50</td>
+            <td>50</td>
+            <td>50</td>
+            <td>50</td>
+            <td>50</td>
+            <td>50</td>
+            <td>50</td>
+            <td>50</td>
+            <td>50</td>
+            <td>50</td>
+            <td>50</td>
+            <td>50</td>
+            <td>50</td>
+            <td>50</td>
+            </tr>
+            <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+            <td>94</td>
+            <td>94</td>
+            <td>94</td>
+            <td>94</td>
+            <td>94</td>
+            <td>94</td>
+            <td>94</td>
+            <td>94</td>
+            <td>94</td>
+            <td>94</td>
+            <td>94</td>
+            <td>94</td>
+            <td>94</td>
+            <td>94</td>
+            <td>94</td>
+            <td>94</td>
+            <td>94</td>
+            <td>94</td>
+            <td>94</td>
+            </tr>
+            <tr>
+            <td>Adam</td>
+            <td>Johnson</td>
+            <td>67</td>
+            <td>67</td>
+            <td>67</td>
+            <td>67</td>
+            <td>67</td>
+            <td>67</td>
+            <td>67</td>
+            <td>67</td>
+            <td>67</td>
+            <td>67</td>
+            <td>67</td>
+            <td>67</td>
+            <td>67</td>
+            <td>67</td>
+            <td>67</td>
+            <td>67</td>
+            <td>67</td>
+            <td>67</td>
+            <td>67</td>
+            <td>67</td>
+            <td>67</td>
+            <td>67</td>
+            <td>67</td>
+            <td>67</td>
+            <td>67</td>
+            <td>67</td>
+            <td>67</td>
+            <td>67</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
